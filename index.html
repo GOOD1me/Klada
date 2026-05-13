@@ -34,13 +34,13 @@
                 </a>
             </li>
             <li>
-                <a onclick="showPage('prezzi')" class="nav-img-btn">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2654/2654504.png" alt="Prezzi">
-                    <span>Prezzi</span>
+                <a onclick="showPage('extra')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2454/2454269.png" alt="Extra">
+                    <span>Extra</span>
                 </a>
             </li>
-             <li>
-                <a onclick="showPage('Oltre ai Gelati')" class="nav-img-btn">
+            <li>
+                <a onclick="showPage('prezzi')" class="nav-img-btn">
                     <img src="https://cdn-icons-png.flaticon.com/512/2654/2654504.png" alt="Prezzi">
                     <span>Prezzi</span>
                 </a>
@@ -65,10 +65,31 @@
             <h1>Il Gelato di KLADA</h1>
             <p>Un'esplosione di freschezza dal 1947</p>
             <button onclick="showPage('gusti')" class="button">Scopri il Menù</button>
-
-            
-            <h3>Vieni in Gelateria</h3>
         </section>
+    </main>
+
+    <main id="extra" class="page-section">
+        <h2 class="section-title">Oltre il Gelato</h2>
+        <div class="gusti-grid">
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=500" alt="Frappè">
+                </div>
+                <h3>Frappè Artigianali</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=500" alt="Torte">
+                </div>
+                <h3>Torte Gelato</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=500" alt="Waffle">
+                </div>
+                <h3>Waffle Caldi</h3>
+            </div>
+        </div>
     </main>
 
     <main id="prezzi" class="page-section">
@@ -85,7 +106,6 @@
                 <h3>Medio</h3>
                 <p>2 Gusti</p>
                 <div class="prezzo-tag">5€</div>
-                <div class="featured-badge">Più Popolare</div>
             </div>
             <div class="prezzo-card">
                 <div class="prezzo-badge">LRG</div>
@@ -154,6 +174,12 @@
                 <p>📞 +39 06 1234 5678</p>
                 <p>✉️ ciao@kladagelateria.it</p>
             </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="4" placeholder="Messaggio"></textarea>
+                <button type="submit" class="submit-btn">Invia</button>
+            </form>
         </div>
     </main>
 
