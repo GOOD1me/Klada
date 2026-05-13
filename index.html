@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLADA - Gelateria Artigianale</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="choco-wave"></div>
+        <div class="ice-cream-container">
+            <div class="scoop-real" id="main-scoop"></div>
+            <div class="cone-real"></div>
+            <p class="loader-text">Preparando il gelato...</p>
+        </div>
+    </div>
+
+    <nav class="gen-nav">
+        <a onclick="showPage('home')" class="gen-logo-text">KLADA</a>
+        <ul id="gen-menu">
+            <li>
+                <a onclick="showPage('home')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/619/619153.png" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="showPage('gusti')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/938/938063.png" alt="Gusti">
+                    <span>Gusti</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="showPage('prezzi')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2654/2654504.png" alt="Prezzi">
+                    <span>Prezzi</span>
+                </a>
+            </li>
+             <li>
+                <a onclick="showPage('Oltre ai Gelati')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2654/2654504.png" alt="Prezzi">
+                    <span>Prezzi</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="showPage('chi-siamo')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/476/476863.png" alt="Storia">
+                    <span>Storia</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="showPage('contatti')" class="nav-img-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Contatti">
+                    <span>Contatti</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="home" class="page-section active">
+        <section class="hero">
+            <h1>Il Gelato di KLADA</h1>
+            <p>Un'esplosione di freschezza dal 1947</p>
+            <button onclick="showPage('gusti')" class="button">Scopri il Menù</button>
+
+            
+            <h3>Vieni in Gelateria</h3>
+        </section>
+    </main>
+
+    <main id="prezzi" class="page-section">
+        <h2 class="section-title">Listino Prezzi</h2>
+        <div class="prezzi-container">
+            <div class="prezzo-card">
+                <div class="prezzo-badge">SML</div>
+                <h3>Piccolo</h3>
+                <p>1 Gusto</p>
+                <div class="prezzo-tag">3€</div>
+            </div>
+            <div class="prezzo-card featured">
+                <div class="prezzo-badge">MED</div>
+                <h3>Medio</h3>
+                <p>2 Gusti</p>
+                <div class="prezzo-tag">5€</div>
+                <div class="featured-badge">Più Popolare</div>
+            </div>
+            <div class="prezzo-card">
+                <div class="prezzo-badge">LRG</div>
+                <h3>Grande</h3>
+                <p>3 Gusti</p>
+                <div class="prezzo-tag">7€</div>
+            </div>
+            <div class="prezzo-card">
+                <div class="prezzo-badge">FAM</div>
+                <h3>Extra</h3>
+                <p>4 Gusti</p>
+                <div class="prezzo-tag">9€</div>
+            </div>
+        </div>
+    </main>
+
+    <main id="gusti" class="page-section">
+        <h2 class="section-title">I Nostri Gusti</h2>
+        <div class="gusti-grid">
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=500" alt="Vaniglia">
+                </div>
+                <h3>Vaniglia Madagascar</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=500" alt="Cioccolato">
+                </div>
+                <h3>Fondente Extra</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2024/07/gelato-alla-fragola-sito-13_cover.jpg" alt="Fragola">
+                </div>
+                <h3>Fragola di Campo</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://www.mythreeseasons.com/wp-content/uploads/2025/06/Pistachio-Gelato-square.jpg" alt="Pistacchio">
+                </div>
+                <h3>Pistacchio Bronte</h3>
+            </div>
+            <div class="gusto-card-img">
+                <div class="img-container">
+                    <img src="https://madiaspa.it/wp-content/uploads/2018/10/928040410.jpg" alt="Fior Di Latte">
+                </div>
+                <h3>Fior Di Latte</h3>
+            </div>
+        </div>
+    </main>
+
+    <main id="chi-siamo" class="page-section">
+        <div class="about-container">
+            <h2 class="section-title">La Nostra Storia</h2>
+            <p>Siamo artigiani del gelato dal 1947. La nostra passione nasce a Sonnino, dove ogni giorno creiamo gusti unici con ingredienti naturali.</p>
+        </div>
+    </main>
+
+    <main id="contatti" class="page-section">
+        <h2 class="section-title">Vieni a Trovarci</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Info</h3>
+                <p>📍 Piazza S. Pietro, Sonnino LT</p>
+                <p>📞 +39 06 1234 5678</p>
+                <p>✉️ ciao@kladagelateria.it</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KLADA Gelateria Artigianale. Prodotto Da NextGen Studios TM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
